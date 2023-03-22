@@ -5,9 +5,9 @@ USE SpotifyClone;
 CREATE TABLE Plano(
      idPlano INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
      tipoPlano VARCHAR(45) NOT NULL,
-     valorPlano DOUBLE 
+     valorPlano DECIMAL(5,2) 
 ) engine = InnoDB;
-    
+
 	INSERT INTO Plano (tipoPlano, valorPlano) VALUES
 		('gratuito', 0.00),
 		('familiar', 7.99),
