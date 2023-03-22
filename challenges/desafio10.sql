@@ -1,14 +1,14 @@
 -- Descomente e altere as linhas abaixo:
 
-CREATE TABLE SpotifyClone.musicas_favoritas (
+CREATE TABLE Favorito (
     idUsuario INT NOT NULL,
     idCancoes INT NOT NULL,
     CONSTRAINT PRIMARY KEY (idUsuario, idCancoes),
-    FOREIGN KEY (idUsuario) REFERENCES pessoa_usuaria (idUsuario),
-    FOREIGN KEY (idCancoes) REFERENCES cancao (idCancoes)
+    FOREIGN KEY (idUsuario) REFERENCES Usuario (idUsuario),
+    FOREIGN KEY (idCancoes) REFERENCES Cancoes (idCancoes)
 ) engine = InnoDB;
 
-INSERT INTO SpotifyClone.musicas_favoritas (idUsuario, idCancoes)
+INSERT INTO Favorito (idUsuario, idCancoes)
 VALUES
   ('1', '3'),
   ('1', '6'),
