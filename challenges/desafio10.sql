@@ -8,8 +8,7 @@ CREATE TABLE Favorito (
     FOREIGN KEY (idCancoes) REFERENCES Cancoes (idCancoes)
 ) engine = InnoDB;
 
-INSERT INTO Favorito (idUsuario, idCancoes)
-VALUES
+INSERT INTO Favorito (idUsuario, idCancoes) VALUES
   ('1', '3'),
   ('1', '6'),
   ('1', '10'),
